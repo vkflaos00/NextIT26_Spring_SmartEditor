@@ -319,40 +319,6 @@ function join(){
     }
     
     */
-    
-    //fn_checkId();
-    
-   let memId = $("#memId").val();
-	console.log("memId:", memId);
-	$.ajax({
-		url: "<c:url  value='/join/idCheck' />"
-		,type:"post"
-		,data:{"memId": memId}
-		,async:false
-		,success:function(data){
-			//alert("success");
-			console.log("data: ", data);
-			if(data){
-				idCheck = true;
-			}else{
-				$("#memId").val("");
-				alert("이미 사용중인 아이디 입니다. 다른아이디를 사용해주세요");
-			}
-		}
-		,error:function(){
-			alert("error");
-		}
-	});
-	
-	
-    if(!idCheck){
-    	return;
-    }
-    
-    let f =  document.loginForm;
-    f.action = "${pageContext.request.contextPath}/member/memberRegister";
-    f.submit();
-};
  
 function fn_checkId(){
 	//alert("fn_checkId");
