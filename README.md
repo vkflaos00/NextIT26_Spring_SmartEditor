@@ -1,1 +1,0 @@
-# NextIT26_Spring_SmartEditor
