@@ -5,16 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>NextIT</title>
-<link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath }/images/nextit_log.jpg" />
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/loginCheck.css">
+<title>FAIL</title>
 </head>
 <body>
 <div class="container">
 	<c:if test="${de ne null }">
 		<h3>로그인 처리 실패</h3>
 		<div class="alert alert-warning">
-			<p> 로그인 처리 실패하였습니다. 전산실에 문의 부탁드립니다. 042-719-8850</p>
 			<div class="btn-area">
 				<button type="button" onclick="history.back();">뒤로가기</button>
 			</div>

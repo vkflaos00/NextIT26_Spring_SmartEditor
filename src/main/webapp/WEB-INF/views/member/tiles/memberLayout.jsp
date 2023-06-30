@@ -22,10 +22,6 @@
 
 	<tiles:insertAttribute name="body"/>
 
-	<footer id="page_footer">
-		<!--footer영역  -->
-		<tiles:insertAttribute name="footer"/>
-	</footer>
 </div>
 
 </body>
